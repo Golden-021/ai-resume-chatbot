@@ -18,7 +18,7 @@ export default function ChatWindow() {
 
   const [input, setInput] = useState("");
 
-  const handleSend = () => {
+  const handleSend = async () => {
     if (!input.trim()) return;
 
     const userMessage: Message = {
@@ -26,34 +26,55 @@ export default function ChatWindow() {
       content: input,
     };
 
-    const assistantMessage: Message = {
-      role: "assistant",
-      content:
-        "This is a temporary AI response. Real AI integration coming next.",
-    };
+    setMessages((prev) => [...prev, userMessage]);
 
-    setMessages((prev) => [
-      ...prev,
-      userMessage,
-      assistantMessage,
-    ]);
+    const currentInput = input;
 
     setInput("");
+
+    try {
+      const response = await fetch(
+        `http://127.0.0.1:8000/chat?prompt=${encodeURIComponent(
+          currentInput
+        )}`
+      );
+
+      const data = await response.json();
+
+      const assistantMessage: Message = {
+        role: "assistant",
+        content: data.response,
+      };
+
+      setMessages((prev) => [...prev, assistantMessage]);
+
+    } catch (error) {
+      console.error(error);
+
+      setMessages((prev) => [
+        ...prev,
+        {
+          role: "assistant",
+          content: "Error connecting to AI backend.",
+        },
+      ]);
+    }
   };
 
   return (
-    <div className="w-full max-w-4xl h-[700px] bg-zinc-900 border border-zinc-800 rounded-2xl p-6 flex flex-col">
+    <div className="w-[380px] h-[600px] bg-zinc-900 border border-zinc-800 rounded-2xl p-6 flex flex-col shadow-2xl">
+      
       <div className="mb-6 border-b border-zinc-800 pb-4">
-        <h1 className="text-3xl font-bold text-white">
+        <h1 className="text-2xl font-bold text-white">
           AI Resume Chatbot
         </h1>
 
-        <p className="text-zinc-400 mt-2">
-          Ask me anything about my experience and projects.
+        <p className="text-zinc-400 mt-2 text-sm">
+          Ask me anything about skills, projects, or experience.
         </p>
       </div>
 
-      <div className="flex-1 overflow-y-auto">
+      <div className="flex-1 overflow-y-auto space-y-4 mb-4">
         {messages.map((message, index) => (
           <MessageBubble
             key={index}
