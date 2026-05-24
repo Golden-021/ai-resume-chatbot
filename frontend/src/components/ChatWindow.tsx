@@ -34,7 +34,7 @@ export default function ChatWindow() {
 
     try {
       const response = await fetch(
-        `http://127.0.0.1:8000/chat?prompt=${encodeURIComponent(
+        `${process.env.NEXT_PUBLIC_API_URL/chat?prompt=${encodeURIComponent(
           currentInput
         )}`
       );
