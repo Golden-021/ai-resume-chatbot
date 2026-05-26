@@ -62,8 +62,24 @@ export default function ChatWindow() {
   };
 
   return (
-    <div className="w-full max-w-4xl h-[90vh] bg-zinc-900 border border-zinc-800 rounded-2xl p-4 md:p-6 flex flex-col shadow-2xl">
-      
+              <div
+          className="
+            w-[40vw]
+            h-[60vh]
+            min-w-[320px]
+            max-w-[900px]
+            min-h-[500px]
+            bg-zinc-900
+            border
+            border-zinc-800
+            rounded-2xl
+            p-4
+            md:p-6
+            flex
+            flex-col
+            shadow-2xl
+          "
+        >
       <div className="mb-6 border-b border-zinc-800 pb-4">
         <h1 className="text-2xl font-bold text-white">
           AI Resume Chatbot
