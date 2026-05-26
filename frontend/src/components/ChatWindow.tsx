@@ -32,33 +32,33 @@ export default function ChatWindow() {
 
     setInput("");
 
-    try {
-          const response = await fetch(
-        `${process.env.NEXT_PUBLIC_API_URL}/chat?prompt=${encodeURIComponent(
-          currentInput
-        )}`
-      );
+          try {
+        const response = await fetch(
+          `${process.env.NEXT_PUBLIC_API_URL}/chat?prompt=${encodeURIComponent(
+            currentInput
+          )}`
+        );
 
-      const data = await response.json();
+        const data = await response.json();
 
-      const assistantMessage: Message = {
-        role: "assistant",
-        content: data.response,
-      };
-
-      setMessages((prev) => [...prev, assistantMessage]);
-
-    } catch (error) {
-      console.error(error);
-
-      setMessages((prev) => [
-        ...prev,
-        {
+        const assistantMessage: Message = {
           role: "assistant",
-          content: "Error connecting to AI backend.",
-        },
-      ]);
-    }
+          content: data.response,
+        };
+
+        setMessages((prev) => [...prev, assistantMessage]);
+
+      } catch (error) {
+        console.error(error);
+
+        setMessages((prev) => [
+          ...prev,
+          {
+            role: "assistant",
+            content: "Error connecting to AI backend.",
+          },
+        ]);
+      }
   };
 
   return (
