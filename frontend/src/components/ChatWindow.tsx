@@ -33,8 +33,8 @@ export default function ChatWindow() {
     setInput("");
 
     try {
-      const response = await fetch(
-        `${process.env.NEXT_PUBLIC_API_URL/chat?prompt=${encodeURIComponent(
+          const response = await fetch(
+        `${process.env.NEXT_PUBLIC_API_URL}/chat?prompt=${encodeURIComponent(
           currentInput
         )}`
       );
