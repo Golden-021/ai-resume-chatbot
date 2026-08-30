@@ -1,0 +1,120 @@
+GOLDEN KESHRI
+GenAI Engineer | Data Analyst | Analytics & AI
+
+PROFESSIONAL SUMMARY
+GenAI Engineer / Data Analyst with experience across analytics, fintech, dealer finance, data pipelines, business intelligence, and Generative AI. Experienced in building analytics dashboards, SQL-based data extraction and validation, Python automation, RAG pipelines, multi-agent workflows, OCR/document processing, and AI assistants for repayment and financing use cases.
+
+PROFESSIONAL EXPERIENCE
+
+INVOYZ — Bengaluru, India
+GenAI Engineer / Data Analyst II | Oct 2024 – May 2026
+Fintech / Supply Chain Finance
+
+- Worked on a fintech platform connecting anchors, distributors, lenders, and payment workflows for dealer finance.
+- Automated reporting for finance and operations teams, replacing recurring manual Excel work with 10+ Power BI dashboards and saving approximately 8–10 hours per week.
+- Built SQL queries to extract, transform, validate, and reconcile invoice, repayment, distributor, and lender data.
+- Tracked business KPIs including credit utilisation, repayment rate, collections performance, dealer-finance usage, outstanding exposure, and finance utilisation.
+- Used Python/Pandas for data cleaning and automation.
+- Investigated repayment gaps, anomalies, and data-quality issues.
+- Collaborated with operations, sales, and leadership teams to translate business requirements into analytical outputs.
+- Worked with data and analytics technologies including Power BI, Power Query, SQL/MySQL, Snowflake, Databricks, Apache Spark/PySpark, AWS S3, AWS Redshift, and Microsoft Azure.
+
+GENAI / AI PROJECTS
+
+Distributor AI Assistant / Distributor Repayment AI Assistant
+- Built an LLM-powered assistant for distributor repayment and financing use cases.
+- Implemented RAG pipelines using document ingestion, chunking, embeddings, semantic search, vector storage, retrieval, and LLM generation.
+- Designed multi-agent workflows for repayment analysis, loan eligibility, lender recommendation, document processing, lender submission, and application-status workflows.
+- Implemented repayment analysis to identify pending invoices and support payment decisions.
+- Implemented profitable payment recommendations using cash discounts, interest charges, and financing costs.
+- Implemented lender eligibility checks based on distributor/application information.
+- Added document upload and verification workflows using OCR and document-processing techniques.
+- Worked with LangChain and LangGraph for orchestration and agentic workflows.
+- Used vector databases including ChromaDB and worked with vector-search concepts such as HNSW indexing and semantic similarity.
+- Implemented two-stage retrieval concepts including retrieval and re-ranking.
+- Used embeddings for semantic search and document retrieval.
+- Worked with OCR technologies including Tesseract, PaddleOCR, and Azure Document Intelligence.
+- Designed state-based LangGraph workflows using shared state, nodes, edges, conditional routing, and parallel branches.
+- Worked with an AI-orchestration pattern that routes requests to SQL, RAG, and tool/MCP workflows before generating a final response.
+- Applied concepts including input/output guardrails, prompt-injection protection, immutable system prompts, and metadata-based access control/RBAC for retrieval.
+- Worked with FastAPI, SQLAlchemy, MySQL, JWT authentication, Docker, Git, Python, OpenAI/GPT models, and LangChain/LangGraph.
+
+DATA ENGINEERING / ANALYTICS PROJECTS
+- Designed Bronze → Silver → Gold data-processing patterns using Databricks and Delta Lake.
+- Worked with ingestion from external data sources into cloud storage and subsequent transformation pipelines.
+- Worked with AWS S3, Redshift, Snowflake, Databricks, Spark/PySpark, SQL, and Azure-related data tooling.
+- Built Power BI dashboards and Power Query transformations for operational and financial reporting.
+- Automated data-processing and reporting workflows using Python/Pandas.
+- Worked on data validation, schema/casting issues, Delta metadata problems, and data-quality troubleshooting.
+
+EARLIER EXPERIENCE
+
+Research Analyst / Database Team Lead — SiliconIndia
+- Worked with research and database-related activities, data management, and analysis.
+- Led database-oriented work and supported structured information management.
+
+Demand Generation Manager / Market Research — Fintech
+- Worked across demand generation, market research, business analysis, and data-driven decision support.
+
+Direct Selling Agent (DSA) — Financing Distributors
+- Worked with financing/distribution workflows and customer/application-related processes.
+
+TECHNICAL SKILLS
+
+Programming:
+- Python, SQL
+
+Generative AI / LLM:
+- RAG, embeddings, semantic search, prompt engineering, LLM applications, multi-agent systems, agentic AI
+- OpenAI GPT models / GPT-4o Mini
+- LangChain, LangGraph
+
+Retrieval / Vector Databases:
+- ChromaDB
+- Vector search, HNSW, similarity search, re-ranking
+- Chunking and retrieval evaluation concepts including recall@K, similarity thresholds, context precision/recall, and faithfulness
+
+Backend / Application:
+- FastAPI, SQLAlchemy, REST APIs, JWT authentication
+- Docker, Git
+
+Data / Cloud:
+- Power BI, Power Query
+- MySQL, Snowflake
+- Databricks, Apache Spark, PySpark
+- AWS S3, AWS Redshift
+- Microsoft Azure
+
+Document AI:
+- OCR
+- Tesseract, PaddleOCR, Azure Document Intelligence
+
+DEVELOPER / ENGINEERING WORKFLOW
+- Git branching, commits, push/pull workflows, pull requests, merge/conflict resolution
+- VS Code
+- REST API testing and local development
+- CI/CD and deployment concepts
+
+RAG SYSTEM KNOWLEDGE
+- Document ingestion → chunking → embedding → vector database → retrieval → context construction → LLM generation
+- Recursive character chunking as a practical chunking strategy
+- Typical chunk sizing and overlap considerations
+- Metadata filtering and access-controlled retrieval
+- Two-stage retrieval and re-ranking
+- Evaluation using retrieval and generation quality metrics
+
+SELECTED BUSINESS DOMAIN KNOWLEDGE
+- Supply-chain finance
+- Dealer finance
+- Invoice financing
+- Distributor repayment
+- Lender eligibility
+- Credit utilisation
+- Collections and repayment analytics
+- Cash discounts and financing-interest calculations
+
+CURRENT DEVELOPMENT PROJECT
+AI Resume Chatbot
+- Building an AI resume chatbot with a RAG-based architecture.
+- Objective: retrieve relevant resume information from documents and provide grounded answers through an LLM.
+- Development workflow uses Git branches, commits, remote repositories, pull requests, and merge workflows.
